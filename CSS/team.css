@@ -1,0 +1,42 @@
+/* General styling for team page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    padding: 20px;
+}
+
+#who-we-are,
+#our-team {
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-member figure {
+    margin-right: 15px;
+}
+
+.team-member figcaption {
+    font-weight: bold;
+    text-align: center;
+}
+
+aside {
+    background-color: darkred;
+    padding: 15px;
+    border: 1px solid darkblue;
+    margin-top: 20px;
+}
+
+aside p {
+    color: whitesmoke
+}

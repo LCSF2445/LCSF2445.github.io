@@ -1,0 +1,51 @@
+/* General styles for the page */
+
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: darkred;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.alt-row {
+    background-color: darkred;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+td img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+

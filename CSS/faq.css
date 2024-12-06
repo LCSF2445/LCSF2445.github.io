@@ -1,0 +1,26 @@
+
+.faq-section {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: darkred;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid darkblue;
+}
+
+.faq-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+

@@ -1,0 +1,111 @@
+<!--
+Name: Matthew Karowich
+Student Number: c0572548
+File Name: contact.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us - E-Cut Solutions</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="CSS/contact.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <img src="images/banner.png" alt="E-Cut Solutions banner" width="100%" height="auto">
+            </header>
+
+            <nav>
+                
+                <div id="nav-bar">
+                    <ul>
+                        <div id="nav-logo">
+                            <a href="index.html"><img src="images/logo.png" alt="E-Cut Solutions company logo" height="100px" width="100px"></a>
+                        </div>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="specials.html">Specials</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                <h1>Contact Us</h1>
+                <p>Have questions or need assistance? Fill out the form below to reach our team!</p>
+
+                <ol>
+                    <li>Please complete all required fields (*).</li>
+                    <li>Provide accurate information to help us assist you better.</li>
+                    <li>Click "Submit Request" to send your inquiry or "Reset Form" to clear all fields.</li>
+                </ol>
+
+                <form action="submit_form.php" method="post">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        
+                        <label for="name">Full Name*:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required autofocus>
+                        
+                        <label for="email">Email Address*:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        
+                        <label for="contact-date">Preferred Contact Date:</label>
+                        <input type="date" id="contact-date" name="contact-date">
+
+                        <label for="reason">Reason for Contact*:</label>
+                        <select id="reason" name="reason" required>
+                            <option value="">Select an Option</option>
+                            <option value="product-info">Product Information</option>
+                            <option value="training">Training Inquiry</option>
+                            <option value="order-support">Order Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+
+                        <label for="message">Message*:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                        <fieldset>
+                            <legend>Preferred Contact Method</legend>
+                            <label><input type="radio" name="contact-method" value="email" required>Email</label>
+                            <label><input type="radio" name="contact-method" value="phone">Phone</label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Subscribe to Newsletter</legend>
+                            <label><input type="checkbox" name="newsletter" value="yes">Yes, keep me updated!</label>
+                        </fieldset>
+
+                        <div id="form-buttons">
+                            <button type="submit">Submit Request</button>
+                            <button type="reset">Reset Form</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </main>
+
+            <footer>
+                <div id="footer-content">
+                    <div id="copyright">
+                        <p>&copy; Copyright 2099. All Rights Reserved.</p>
+                    </div>
+                    <div id="contact">
+                        <p><a href="mailto:info@e_cut_solutions.net">Request Information</a></p>
+                    </div>
+                    <div id="name">
+                        <p>Matthew Karowich &nbsp; &nbsp; c0572548</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

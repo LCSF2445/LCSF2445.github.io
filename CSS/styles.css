@@ -1,0 +1,149 @@
+
+
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.35;
+    background-color: grey; 
+}
+
+header {
+    margin: 1% 0;
+    text-align: center;
+    box-shadow: 1px 1px darkgray;
+    border: 1px solid darkblue;
+    border-radius: 2px;
+}
+
+/* Adjust logo size in the header */
+header img {
+    width: 100%; 
+    max-height: 500px; 
+    height: 200px; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+nav {
+    margin: 0;
+}
+/* Navigation bar styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    background-color: #333;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+#nav-logo a img{
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: rgb(79, 79, 79); 
+}
+
+p {
+    margin-bottom: 20px;
+    color: black; /* Subtle color for paragraphs */
+}
+
+ol {
+    list-style-type: none;
+}
+
+#company-title p{
+    display:flex;
+    float: left;
+    width: 20%;
+}
+
+
+/* Multimedia styles */
+audio, video {
+    margin: 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    margin-top: 1%;
+    border-top: 3px solid #555;
+    line-height: 75%;
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    color: rgb(172, 9, 9);
+}
+
+a:visited {
+    color: slategray;
+}
+
+
+/* Responsive design improvements */
+/* For small screens (mobile) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stacks menu items vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adds spacing between items */
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+        justify-content: space-around; /* Distributes menu items evenly */
+    }
+
+    main {
+        padding: 15px;
+    }
+}
